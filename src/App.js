@@ -24,19 +24,32 @@ function App() {
           </Alert>
           : null
         }
-        <div className="header">
-          <div className = "start-header"></div>
-          <div className = "header__image">
-            <img src={logoImage} alt="MainImage"></img>
+          <div className="header__one">
+            <div className = "start-header"></div>
+            <div className = "header__image">
+              <img src={logoImage} alt="MainImage"></img>
+            </div>
+            <div>
+              <ul className = "header__content">
+                <StyledLink to ="/"><li>My Page</li></StyledLink>
+                <StyledLink to ="/"><li>Cart</li></StyledLink>
+                <StyledLink to ="/"><li>Sign in</li></StyledLink>
+              </ul>
+            </div>
           </div>
-          <div>
-            <ul className = "header__content">
-              <StyledLink to ="/"><li>MyPages</li></StyledLink>
-              <StyledLink to ="/"><li>Cart</li></StyledLink>
-              <StyledLink to ="/"><li>Sign in</li></StyledLink>
-            </ul>
+
+          <div className = "header__two">
+              <ul className = "header__menuOne">
+              <StyledLink to ="/"><li>NEW</li></StyledLink>
+              <StyledLink to ="/"><li>BEST</li></StyledLink>
+              <StyledLink to ="/"><li>ITEM</li></StyledLink>
+              </ul>
+              <ul className = "header__menuTwo">
+              <StyledLink to ="/"><li>Search</li></StyledLink>
+              <StyledLink to ="/"><li>About</li></StyledLink>
+              <StyledLink to ="/"><li>Contact</li></StyledLink>
+              </ul>
           </div>
-        </div>
     </div>
   );
 }

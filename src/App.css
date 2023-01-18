@@ -1,4 +1,6 @@
 .App {
+  margin : 0;
+  padding : 0;
   text-align: center;
 }
 
@@ -10,18 +12,18 @@
   color : white;
 }
 
-.header {
+.header__one {
   width : 100%;
   display : flex;
   background-color: white;
   justify-content: center;
 }
 
-.header div {
+.header__one div {
   flex : 1;
 }
 
-.header img {
+.header__one img {
   width : 300px;
   height : 300px;
   padding-left: 15px;
@@ -34,7 +36,6 @@
   justify-content: space-around;
   align-items: center;
   list-style: none;
-  padding-top: 25%;
 }
 
 .header__content li {
@@ -42,4 +43,34 @@
   font-family: 'Unbounded', cursive;
   /* 줄바꿈 적용 X */
   white-space: nowrap;
+  color : grey;
+  padding-top : 150px;
+}
+
+.header__two {
+  display : flex;
+  justify-content: space-around;
+  font-family: 'Unbounded', cursive;
+  list-style: none;
+  padding-top : 4%;
+}
+
+.header__menuOne{
+  display : flex;
+  padding-right: 20%;
+}
+
+.header__menuOne li{
+  list-style: none;
+  padding-left : 40px;
+}
+
+.header__menuTwo {
+  display : flex;
+  padding-left: 20%;
+}
+
+.header__menuTwo li{
+  list-style: none;
+  padding-right : 40px;
 }
